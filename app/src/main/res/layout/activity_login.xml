@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/white"
+    android:layoutDirection="ltr"
+    android:gravity="center"
+    android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome"
+            android:textColor="@color/blue"
+            android:textSize="40sp"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:text ="@string/having_account"
+            android:textSize = "20sp"
+            android:layout_marginBottom="50dp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/emailError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center">
+
+            <EditText android:autofillHints="username"
+                android:id="@+id/username"
+                android:layout_width="376dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="@string/username"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:singleLine="true" />
+
+
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/PassError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center">
+
+
+            <EditText android:autofillHints="password"
+                android:id="@+id/text_input_password_toggle"
+                android:layout_width="381dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="358dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="45dp"
+            android:background="@drawable/rounded_corners"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/signup"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:layout_marginBottom="150dp">
+
+    </TextView>
+
+    </LinearLayout>
+

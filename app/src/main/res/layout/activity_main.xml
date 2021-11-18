@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <FrameLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@color/blue"
+        android:layoutDirection="ltr"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="400dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/logo_description"
+                android:src="@drawable/logo"
+                tools:ignore="ImageContrastCheck">
+
+            </ImageView>
+        </LinearLayout>
+
+    <TextView
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="24sp">
+    </TextView>
+    </FrameLayout>
