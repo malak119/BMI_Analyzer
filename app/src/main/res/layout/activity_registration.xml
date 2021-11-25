@@ -4,26 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity"
     android:background="@color/white"
+    tools:context=".LoginActivity"
     android:layoutDirection="ltr"
-    android:gravity="center"
     android:orientation="vertical">
+
+    <include android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/new_account"
+        android:layout_gravity="center"
         android:textColor="@color/blue"
-        android:textSize="40sp"
-        android:textStyle="bold">
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        >
     </TextView>
 
     <TextView
         android:layout_width = "wrap_content"
         android:layout_height = "wrap_content"
         android:text ="@string/not_having_account"
-        android:textSize = "20sp"
+        android:layout_gravity="center"
+        android:textSize = "15sp"
         android:layout_marginBottom="50dp"/>
 
     <android.support.design.widget.TextInputLayout
@@ -35,7 +41,7 @@
 
         <EditText
             android:id="@+id/name"
-            android:layout_width="376dp"
+            android:layout_width="340dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:autofillHints="name"
@@ -46,6 +52,7 @@
             android:paddingStart="5dp"
             android:paddingEnd="5dp"
             android:singleLine="true"
+            android:background="@drawable/edit_hint"
             tools:ignore="SpeakableTextPresentCheck" />
     </android.support.design.widget.TextInputLayout>
 
@@ -60,7 +67,7 @@
 
         <EditText
             android:id="@+id/email"
-            android:layout_width="381dp"
+            android:layout_width="340dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:autofillHints="E-mail"
@@ -71,6 +78,7 @@
             android:paddingStart="5dp"
             android:paddingEnd="5dp"
             android:singleLine="true"
+            android:background="@drawable/edit_hint"
             tools:ignore="SpeakableTextPresentCheck" />
     </android.support.design.widget.TextInputLayout>
 
@@ -84,17 +92,19 @@
 
         <EditText
             android:id="@+id/pass"
-            android:layout_width="381dp"
+            android:layout_width="340dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:autofillHints="password"
             android:hint="@string/password"
+            android:drawableEnd="@drawable/ic_baseline_visibility_off_24"
             android:inputType="textPassword"
             android:maxLines="1"
             android:minHeight="48dp"
             android:paddingStart="5dp"
             android:paddingEnd="5dp"
             android:singleLine="true"
+            android:background="@drawable/edit_hint"
             tools:ignore="SpeakableTextPresentCheck" />
     </android.support.design.widget.TextInputLayout>
 
@@ -108,7 +118,7 @@
 
         <EditText
             android:id="@+id/text_input_password_toggle"
-            android:layout_width="381dp"
+            android:layout_width="340dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:autofillHints="password"
@@ -119,29 +129,47 @@
             android:paddingStart="5dp"
             android:paddingEnd="5dp"
             android:singleLine="true"
+            android:background="@drawable/edit_hint"
             tools:ignore="SpeakableTextPresentCheck" />
     </android.support.design.widget.TextInputLayout>
 
     <Button
         android:id="@+id/create"
-        android:layout_width="358dp"
-        android:layout_height="61dp"
+        android:layout_width="315dp"
+        android:layout_height="50dp"
         android:layout_marginTop="60dp"
-        android:layout_marginBottom="45dp"
+        android:layout_marginBottom="35dp"
+        android:layout_gravity="center"
         android:background="@drawable/rounded_corners"
         android:text="@string/create"
         android:textColor="@color/white"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/account"
+        android:textColor="@color/black"
+        android:textSize="14sp">
+
+    </TextView>
 
     <TextView
         android:id="@+id/account"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/account"
-        android:textColor="@color/black"
-        android:textSize="17sp"
-        android:layout_marginBottom="150dp">
+        android:text="@string/login_account"
+        android:textColor="@color/blue"
+        android:textSize="14sp"
+        android:layout_marginStart="5dp">
 
     </TextView>
+
+    </LinearLayout>
+
 </LinearLayout>

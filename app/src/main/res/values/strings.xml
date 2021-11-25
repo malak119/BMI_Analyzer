@@ -7,7 +7,9 @@
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="login">LOG IN</string>
-    <string name="signup">You Don't Have An Account ? Sign Up</string>
+    <string name="signup_account">You Don\'t Have An Account ?</string>
+    <string name="signup">Sign Up</string>
+
     <string name="new_account">Create New Account</string>
     <string name="not_having_account">If you do not already have an account</string>
     <string name="user_name">Name</string>
@@ -15,7 +17,9 @@
     <string name="new_password">Password</string>
     <string name="re_password">Re-Password</string>
     <string name="create">CREATE</string>
-    <string name="account">You Have An Account? Login</string>
+    <string name="account">You Have An Account ? </string>
+    <string name="login_account"> Login</string>
+
 
 
 </resources>
