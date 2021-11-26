@@ -12,7 +12,7 @@
         layout="@layout/toolbar" />
 
     <TextView
-        android:layout_width="307dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:paddingTop="50dp"
@@ -28,47 +28,230 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
         android:gravity="center">
 
-    <RadioGroup
-        android:layout_width="wrap_content"
+        <RadioGroup
+            android:layout_width="352dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:checkedButton="@id/Male"
+            android:orientation="horizontal"
+            android:theme="@style/RadioButtonStyle"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:text="@string/gender"
+                android:textColor="@color/blue"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/Male"
+                android:layout_width="97dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:buttonTint="@color/blue"
+                android:checked="true"
+                android:minHeight="48dp"
+                android:text="@string/male"
+                android:textColor="@color/blue"
+                android:textSize="15sp"
+                tools:ignore="TextContrastCheck" />
+
+            <RadioButton
+                android:id="@+id/Female"
+                android:layout_width="97dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:buttonTint="@color/blue"
+                android:minHeight="48dp"
+                android:text="@string/female"
+                android:textColor="@color/blue"
+                android:textSize="15sp"
+                tools:ignore="TextContrastCheck" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:checkedButton="@id/Male"
-        tools:ignore="UselessParent"
-        android:orientation="horizontal"
-        android:layout_gravity="center">
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/gender"
+            android:layout_weight="1"
+            android:text="@string/weight"
             android:textColor="@color/blue"
             android:textSize="20sp"
-            android:paddingStart="5dp"
-            android:paddingEnd="50dp"
-            />
+            android:textStyle="bold" />
 
-        <RadioButton
-            android:id="@+id/Male"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/male"
-            android:textColor="@color/blue"
-            android:textSize="15sp"
-            android:layout_marginEnd="30dp"/>
+        <LinearLayout
+            android:layout_width="109dp"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_style">
 
-        <RadioButton
-            android:id="@+id/Female"
-            android:layout_width="match_parent"
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border_style"
+                android:text="@string/minus"
+                android:textColor="@color/blue"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/weight"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border_style"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border_style"
+                android:text="@string/plus"
+                android:textColor="@color/blue"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/female"
+            android:layout_marginStart="5dp"
+            android:text="@string/kg"
             android:textColor="@color/blue"
-            android:textSize="15sp"
-            android:layout_marginEnd="10dp"
-            />
-    </RadioGroup>
+            android:textSize="15sp">
+        </TextView>
     </LinearLayout>
 
 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/length"
+            android:textColor="@color/blue"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="109dp"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_style">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border_style"
+                android:text="@string/minus"
+                android:textColor="@color/blue"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/length"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border_style"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border_style"
+                android:text="@string/plus"
+                android:textColor="@color/blue"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="@string/cm"
+            android:textColor="@color/blue"
+            android:textSize="15sp">
+        </TextView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="152dp"
+            android:layout_height="34dp"
+            android:layout_weight="1"
+            android:text="@string/date_OB"
+            android:textColor="@color/blue"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="210dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/border_style"
+            android:gravity="center"
+            android:inputType="date" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="376dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/rounded_corners"
+        android:text="@string/saving_data"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 </LinearLayout>

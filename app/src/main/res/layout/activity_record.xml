@@ -83,7 +83,8 @@
             android:layout_marginStart="5dp"
             android:text="@string/kg"
             android:textColor="@color/blue"
-            android:textSize="15sp"></TextView>
+            android:textSize="15sp">
+        </TextView>
     </LinearLayout>
 
     <LinearLayout
@@ -225,7 +226,8 @@
         android:text="@string/saving_data"
         android:textColor="@color/white"
         android:textSize="18sp"
-        android:textStyle="bold"></Button>
+        android:textStyle="bold">
+    </Button>
 
 
 </LinearLayout>
