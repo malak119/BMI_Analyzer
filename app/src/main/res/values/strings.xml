@@ -33,8 +33,9 @@
     <string name="length"> Length</string>
     <string name="date_OB"> Date Of Birth</string>
     <string name="saving_data"> Save Data</string>
-
-
+    <string name="new_record"> New Record</string>
+    <string name="date"> Date</string>
+    <string name="time"> Time</string>
 
 
 
