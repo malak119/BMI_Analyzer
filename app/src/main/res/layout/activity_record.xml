@@ -224,6 +224,7 @@
         android:layout_marginBottom="35dp"
         android:background="@drawable/rounded_corners"
         android:text="@string/saving_data"
+        android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold">

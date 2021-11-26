@@ -25,55 +25,54 @@
     </TextView>
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <RadioGroup
+        android:layout_width="365dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:gravity="center">
+        android:layout_gravity="center"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:checkedButton="@id/Male"
+        android:orientation="horizontal"
+        android:theme="@style/RadioButtonStyle"
+        tools:ignore="UselessParent">
 
-        <RadioGroup
-            android:layout_width="352dp"
-            android:layout_height="35dp"
-            android:layout_gravity="center"
-            android:checkedButton="@id/Male"
-            android:orientation="horizontal"
-            android:theme="@style/RadioButtonStyle"
-            tools:ignore="UselessParent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gender"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="45dp"
+            android:textColor="@color/blue"
+            android:textSize="20sp" />
 
-            <TextView
-                android:layout_width="145dp"
-                android:layout_height="wrap_content"
-                android:text="@string/gender"
-                android:textColor="@color/blue"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+        <RadioButton
+            android:id="@+id/Male"
+            android:layout_width="84dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:buttonTint="@color/blue"
+            android:checked="true"
+            android:gravity="center"
+            android:minHeight="48dp"
+            android:text="@string/male"
+            android:textColor="@color/blue"
+            android:textSize="15sp"
+            tools:ignore="TextContrastCheck" />
 
-            <RadioButton
-                android:id="@+id/Male"
-                android:layout_width="97dp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="30dp"
-                android:buttonTint="@color/blue"
-                android:checked="true"
-                android:minHeight="48dp"
-                android:text="@string/male"
-                android:textColor="@color/blue"
-                android:textSize="15sp"
-                tools:ignore="TextContrastCheck" />
-
-            <RadioButton
-                android:id="@+id/Female"
-                android:layout_width="97dp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="30dp"
-                android:buttonTint="@color/blue"
-                android:minHeight="48dp"
-                android:text="@string/female"
-                android:textColor="@color/blue"
-                android:textSize="15sp"
-                tools:ignore="TextContrastCheck" />
-        </RadioGroup>
-    </LinearLayout>
+        <RadioButton
+            android:id="@+id/Female"
+            android:layout_width="91dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:buttonTint="@color/blue"
+            android:gravity="center"
+            android:minHeight="48dp"
+            android:text="@string/female"
+            android:textColor="@color/blue"
+            android:textSize="15sp"
+            tools:ignore="TextContrastCheck" />
+    </RadioGroup>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -91,7 +90,7 @@
             android:text="@string/weight"
             android:textColor="@color/blue"
             android:textSize="20sp"
-            android:textStyle="bold" />
+             />
 
         <LinearLayout
             android:layout_width="109dp"
@@ -118,7 +117,7 @@
                 android:ems="10"
                 android:inputType="numberDecimal"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                />
 
             <Button
                 android:layout_width="wrap_content"
@@ -159,7 +158,7 @@
             android:text="@string/length"
             android:textColor="@color/blue"
             android:textSize="20sp"
-            android:textStyle="bold" />
+             />
 
         <LinearLayout
             android:layout_width="109dp"
@@ -186,7 +185,7 @@
                 android:ems="10"
                 android:inputType="numberDecimal"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                />
 
             <Button
                 android:layout_width="wrap_content"
@@ -212,29 +211,26 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
+        android:layout_marginEnd="20dp"
         android:layout_marginBottom="30dp"
         android:gravity="center"
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="152dp"
-            android:layout_height="34dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/date_OB"
             android:textColor="@color/blue"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textSize="15sp" />
 
         <EditText
             android:id="@+id/editTextDate"
-            android:layout_width="210dp"
+            android:layout_width="185dp"
             android:layout_height="37dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
             android:background="@drawable/border_style"
-            android:gravity="center"
             android:inputType="date" />
 
     </LinearLayout>
@@ -242,7 +238,7 @@
 
     <Button
         android:id="@+id/saveButton"
-        android:layout_width="376dp"
+        android:layout_width="322dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_marginStart="10dp"
@@ -251,6 +247,7 @@
         android:layout_marginBottom="35dp"
         android:background="@drawable/rounded_corners"
         android:text="@string/saving_data"
+        android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold" />

@@ -1,13 +1,13 @@
 package com.malakibQq.myapplication;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 public class RegistrationActivity extends AppCompatActivity {
     TextView textView;
+    TextView textLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,12 +15,17 @@ public class RegistrationActivity extends AppCompatActivity {
         setContentView(R.layout.activity_registration);
 
         textView= findViewById(R.id.create);
-        textView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent= new Intent(RegistrationActivity.this,CompleteInformationActivity.class);
-                startActivity(intent);
-            }
+        textView.setOnClickListener(v -> {
+            Intent intent= new Intent(RegistrationActivity.this,CompleteInformationActivity.class);
+            startActivity(intent);
         });
+
+        textLogin= findViewById(R.id.login_account);
+        textLogin.setOnClickListener(v -> {
+            Intent intent= new Intent(RegistrationActivity.this,LoginActivity.class);
+            startActivity(intent);
+        });
+
+
     }
 }
