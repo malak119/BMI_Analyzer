@@ -28,17 +28,19 @@
     <string name="minus"> - </string>
     <string name="kg"> kg </string>
     <string name="cm"> cm </string>
-
-
     <string name="length"> Length</string>
     <string name="date_OB"> Date Of Birth</string>
     <string name="saving_data"> Save Data</string>
     <string name="new_record"> New Record</string>
     <string name="date"> Date</string>
     <string name="time"> Time</string>
-
-
-
-
+    <string name="add_food"> Add Food Details</string>
+    <string name="category"> Category</string>
+    <string name="calory"> Calory</string>
+    <string name="cal"> cal/g</string>
+    <string name="photo"> Photo</string>
+    <string name="food_photo_Desc"> Here, there is a photo for food which is </string>
+    <string name="upload_photo"> Upload Photo</string>
+    <string name="save"> Save</string>
 
 </resources>

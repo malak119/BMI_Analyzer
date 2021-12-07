@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddFoodActivity"
+    android:layoutDirection="ltr"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50dp"
+        android:paddingTop="50dp"
+        android:text="@string/add_food"
+        android:textColor="@color/blue"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="129dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="@string/user_name"
+            android:textColor="@color/blue"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="251dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_weight="1"
+            android:autofillHints="name"
+            android:background="@drawable/border_style"
+            android:ems="10"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="129dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="@string/category"
+            android:textColor="@color/blue"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/category"
+            android:layout_width="251dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_weight="1"
+            android:autofillHints="category"
+            android:background="@drawable/border_style"
+            android:ems="10"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="28dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="@string/calory"
+            android:textColor="@color/blue"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/calory"
+            android:layout_width="85dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:autofillHints="calory"
+            android:background="@drawable/border_style"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cal"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginEnd="35dp">
+        </TextView>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="@string/photo"
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="185dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/food_photo_Desc"
+        android:src="@drawable/pic"
+        android:background="@drawable/border_style">
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/upload_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corners"
+            android:text="@string/upload_photo"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="20dp"
+            style="?android:attr/buttonBarButtonStyle">
+        </Button>
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corners"
+            android:text="@string/save"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+
+
+</LinearLayout>
