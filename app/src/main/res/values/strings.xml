@@ -42,5 +42,16 @@
     <string name="food_photo_Desc"> Here, there is a photo for food which is </string>
     <string name="upload_photo"> Upload Photo</string>
     <string name="save"> Save</string>
+    <string name="hi"> Hi,</string>
+    <string name="current_status"> Current Status</string>
+    <string name="old_status">Old Status</string>
+    <string name="add_food_btn">Add Food</string>
+    <string name="add_record">Add Record</string>
+    <string name="view_food">View Food</string>
+    <string name="logout"><u>Logout</u></string>
+    <string name="normal">Normal (still Good)</string>
+
+
+
 
 </resources>
