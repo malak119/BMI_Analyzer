@@ -16,7 +16,7 @@ public class RegistrationActivity extends AppCompatActivity {
 
         textView= findViewById(R.id.create);
         textView.setOnClickListener(v -> {
-            Intent intent= new Intent(RegistrationActivity.this,CompleteInformationActivity.class);
+            Intent intent= new Intent(RegistrationActivity.this,CompleteInfo.class);
             startActivity(intent);
         });
 

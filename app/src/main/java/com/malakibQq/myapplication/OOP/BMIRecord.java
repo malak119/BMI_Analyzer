@@ -6,8 +6,9 @@ public class BMIRecord {
     int weight;
     int length;
 
-    public BMIRecord(String date, int weight, int length){
+    public BMIRecord(String date,String message, int weight, int length){
         this.date= date;
+        this.message= message;
         this.weight= weight;
         this.length= length;
     }
@@ -27,6 +28,10 @@ public class BMIRecord {
         this.length= length;
     }
 
-    public String getBMIMessage(){ return message;}
+    public String getMessage(){ return message;}
+    public void setMessage(String message){
+        this.message= message;
+    }
+
 
 }

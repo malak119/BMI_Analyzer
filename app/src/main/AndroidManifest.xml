@@ -11,6 +11,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
+            android:name=".element_view"
+            android:exported="false" />
+        <activity
+            android:name=".CompleteInfo"
+            android:exported="false" />
+        <activity
             android:name=".HomeActivity"
             android:exported="false" />
         <activity
@@ -18,9 +24,6 @@
             android:exported="false" />
         <activity
             android:name=".RecordActivity"
-            android:exported="false" />
-        <activity
-            android:name=".CompleteInformationActivity"
             android:exported="false" />
         <activity
             android:name=".RegistrationActivity"
