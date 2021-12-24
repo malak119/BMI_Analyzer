@@ -1,6 +1,6 @@
 package com.malakibQq.myapplication;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class element_view extends AppCompatActivity {

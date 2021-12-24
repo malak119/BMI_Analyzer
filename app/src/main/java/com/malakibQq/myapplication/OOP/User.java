@@ -1,8 +1,12 @@
 package com.malakibQq.myapplication.OOP;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 import java.util.ArrayList;
 
 public class User {
+    public static Object user;
+    private FirebaseAuth mAuth;
     private final ArrayList<BMIRecord> records;
     private ArrayList<BMIFood> foods;
 
@@ -26,4 +30,7 @@ public class User {
     public ArrayList<BMIFood> getFood() {
         return foods;
     }
+
+    public FirebaseAuth getmAuth(){return mAuth;}
+    public void setmAuth(FirebaseAuth mAuth) { this.mAuth= mAuth; }
 }

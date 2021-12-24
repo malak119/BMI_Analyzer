@@ -12,7 +12,7 @@
         android:id="@+id/toolbar"/>
 
 
-    <android.support.v4.widget.NestedScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true">
@@ -82,7 +82,7 @@
                />
 
 
-            <android.support.v7.widget.RecyclerView
+            <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/home"
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
@@ -91,7 +91,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp">
-            </android.support.v7.widget.RecyclerView>
+            </androidx.recyclerview.widget.RecyclerView>
 
 
             <LinearLayout
@@ -162,5 +162,5 @@
                 android:layout_marginBottom="20dp"/>
 
         </LinearLayout>
-    </android.support.v4.widget.NestedScrollView>
+    </androidx.core.widget.NestedScrollView>
 </LinearLayout>

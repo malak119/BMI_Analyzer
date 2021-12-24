@@ -82,6 +82,7 @@
             android:layout_weight="1"
             android:autofillHints="category"
             android:background="@drawable/border_style"
+            android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
             android:ems="10"
             android:inputType="text" />
 
