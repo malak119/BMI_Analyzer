@@ -173,9 +173,9 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editTextDate"
+            android:id="@+id/date"
             android:layout_width="251dp"
-            android:layout_height="37dp"
+            android:layout_height="35dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="30dp"
             android:layout_weight="1"
@@ -204,7 +204,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editTextTime"
+            android:id="@+id/time"
             android:layout_width="wrap_content"
             android:layout_height="35dp"
             android:layout_marginStart="20dp"
@@ -217,11 +217,12 @@
 
     <Button
         android:id="@+id/saveButton"
-        android:layout_width="350dp"
+        android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_marginTop="50dp"
-        android:layout_marginBottom="35dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
         android:background="@drawable/rounded_corners"
         android:text="@string/saving_data"
         android:textAllCaps="false"

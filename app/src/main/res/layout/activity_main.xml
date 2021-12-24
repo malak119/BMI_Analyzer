@@ -17,7 +17,7 @@
                 android:layout_height="400dp"
                 android:layout_gravity="center"
                 android:contentDescription="@string/logo_description"
-                android:src="@drawable/logo"
+                android:src="@drawable/logo1"
                 tools:ignore="ImageContrastCheck">
 
             </ImageView>

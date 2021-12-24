@@ -11,6 +11,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
+            android:name=".EditFood"
+            android:exported="false" />
+        <activity
+            android:name=".FoodList"
+            android:exported="false" />
+        <activity
             android:name=".element_view"
             android:exported="false" />
         <activity

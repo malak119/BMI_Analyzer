@@ -1,44 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="100px"
-    android:background="@color/blue">
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/blue"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:elevation="2dp"
+    android:gravity="center|center_horizontal"
+    >
     <LinearLayout
-        android:layout_margin="7dp"
-        android:paddingTop="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        tools:ignore="MissingConstraints">
-        <ImageView
+        android:layout_gravity="center"
+        >
+
+        <Button
             android:id="@+id/arrow"
-            android:layout_width="70px"
-            android:layout_height="70px"
-            android:src="@mipmap/arrow"
-            android:onClick="backToPreviousActivity" tools:ignore="MissingConstraints"></ImageView>
-        <View
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            tools:ignore="MissingConstraints" />
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:onClick="backToPreviousActivity"
+            android:background="@drawable/arrow"
+            android:layout_gravity="center">
+        </Button>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="80dp"
+            android:gravity="center"
+            android:text="@string/app_name"
             android:textColor="@color/white"
-            android:textSize="20dp"
-            android:text="BMI Analyzer"
-            tools:ignore="MissingConstraints"></TextView>
-        <View
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_weight="1"></View>
-        <ImageView
-            android:layout_width="100px"
-            android:layout_height="100px"
-            android:src="@mipmap/arrow"
-            tools:ignore="MissingConstraints"
-            android:clickable="false"
-            android:alpha="0"></ImageView>tools:ignore="MissingConstraints" />
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </TextView>
+
     </LinearLayout>
-</LinearLayout>
+</android.support.v7.widget.Toolbar>

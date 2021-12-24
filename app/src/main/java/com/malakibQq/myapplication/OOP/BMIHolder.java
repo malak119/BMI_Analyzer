@@ -12,21 +12,21 @@ public class BMIHolder extends RecyclerView.ViewHolder {
     private final TextView weight;
     private final TextView message;
     private final TextView length;
-    private BMIRecord record;
+    private BMIRecord records;
 
     public BMIHolder(@NonNull View itemView){
         super(itemView);
         this.date= itemView.findViewById(R.id.date);
         this.weight= itemView.findViewById(R.id.weight);
-        this.message= itemView.findViewById(R.id.message);
+        this.message= itemView.findViewById(R.id.time);
         this.length= itemView.findViewById(R.id.length);
     }
-    public void setBMIRecord(BMIRecord record){
-        this.record = record;
-        date.setText(record.getDate());
-        message.setText(record.getMessage());
-        weight.setText(String.valueOf(record.getWeight()));
-        length.setText(String.valueOf(record.getLength()));
+    public void setBMIRecord(BMIRecord records){
+        this.records = records;
+        date.setText(records.getDate());
+        message.setText(records.getMessage());
+        weight.setText(String.valueOf(records.getWeight()));
+        length.setText(String.valueOf(records.getLength()));
     }
 
 

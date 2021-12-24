@@ -17,7 +17,7 @@
         android:layout_gravity="center"
         android:layout_marginBottom="50dp"
         android:paddingTop="20dp"
-        android:text="@string/add_food"
+        android:text="@string/edit_food"
         android:textColor="@color/blue"
         android:textSize="35sp"
         android:textStyle="bold" />
@@ -33,7 +33,7 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="180dp"
+            android:layout_width="207dp"
             android:layout_height="40dp"
             android:layout_weight="1"
             android:text="@string/user_name"
@@ -65,7 +65,7 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="180dp"
+            android:layout_width="205dp"
             android:layout_height="40dp"
             android:layout_weight="1"
             android:text="@string/category"
@@ -97,7 +97,7 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="80dp"
+            android:layout_width="106dp"
             android:layout_height="40dp"
             android:layout_weight="1"
             android:text="@string/calory"
@@ -141,14 +141,14 @@
 
 
     <ImageView
-        android:layout_width="275dp"
-        android:layout_height="185dp"
+        android:id="@+id/image"
+        android:layout_width="332dp"
+        android:layout_height="212dp"
         android:layout_marginStart="30dp"
         android:layout_marginBottom="20dp"
+        android:background="@drawable/border_style"
         android:contentDescription="@string/food_photo_Desc"
-        android:src="@drawable/pic"
-        android:background="@drawable/border_style">
-    </ImageView>
+        android:src="@drawable/salamon"></ImageView>
 
     <LinearLayout
         android:layout_width="275dp"

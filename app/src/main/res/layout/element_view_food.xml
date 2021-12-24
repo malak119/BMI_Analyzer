@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:orientation="horizontal"
+            android:background="@drawable/edit_border_style">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="2dp"
+                android:contentDescription="@string/food_photo_Desc"
+                android:background="@drawable/edit_border_style"
+              >
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/white_black">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/calory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="15sp">
+                </TextView>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/edit"
+                    android:layout_width="65dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="7dp"
+                    android:background="@drawable/rounded_corners"
+                    android:text="@string/edit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold">
+                </Button>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:id="@+id/delete"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="end"
+                    android:background="@drawable/rounded_corners"
+                    android:src="@drawable/ic_baseline_close_24">
+                </ImageButton>
+
+            </LinearLayout>
+
+        </LinearLayout>
+</LinearLayout>

@@ -5,8 +5,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.malakibQq.myapplication.OOP.BMIAdapter;
 import com.malakibQq.myapplication.OOP.BMIRecord;
@@ -21,36 +21,37 @@ public class HomeActivity extends AppCompatActivity {
     Button add_record;
     Button add_food;
     Button view_food;
+    TextView logout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+
         add_record = findViewById(R.id.add_record);
         add_food = findViewById(R.id.add_food);
         view_food = findViewById(R.id.view_food);
-
-        add_record.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                btn_record();
-            }
-        });
-        add_food.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                btn_food();
-            }
-        });
-
         home = findViewById(R.id.home);
+        logout = findViewById(R.id.logout);
+
+        add_record.setOnClickListener(view -> btn_record());
+        add_food.setOnClickListener(view -> btn_food());
+
+        view_food.setOnClickListener(v -> {
+            Intent intent= new Intent(HomeActivity.this,FoodList.class);
+            startActivity(intent);
+        });
+
+        logout.setOnClickListener(v -> {
+            Intent intent= new Intent(HomeActivity.this,LoginActivity.class);
+            startActivity(intent);
+        });
         home.setLayoutManager(new LinearLayoutManager(this));
         records = (new User()).getRecords();
         recordAdapter = new BMIAdapter(records, this);
         home.setAdapter(recordAdapter);
 
-        findViewById(R.id.arrow).setAlpha(0L);
-        findViewById(R.id.arrow).setClickable(false);
     }
 
     public void btn_record() {
